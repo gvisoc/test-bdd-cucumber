@@ -1,4 +1,4 @@
-# test-bdd-cucumber
+# test-bdd-cucumber [![Build Status](https://travis-ci.org/gvisoc/test-bdd-cucumber.svg?branch=master)](https://travis-ci.org/gvisoc/test-bdd-cucumber)
 A test-run for CucumberJS and istanbul
 
 ## What is it about
