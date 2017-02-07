@@ -1,4 +1,4 @@
-# test-bdd-cucumber [![Build Status](https://travis-ci.org/gvisoc/test-bdd-cucumber.svg?branch=master)](https://travis-ci.org/gvisoc/test-bdd-cucumber)
+# test-bdd-cucumber [![Build Status](https://travis-ci.org/gvisoc/test-bdd-cucumber.svg?branch=master)](https://travis-ci.org/gvisoc/test-bdd-cucumber)[![Coverage Status](https://coveralls.io/repos/github/gvisoc/test-bdd-cucumber/badge.svg?branch=master)](https://coveralls.io/github/gvisoc/test-bdd-cucumber?branch=master)
 A test-run for CucumberJS and istanbul
 
 ## What is it about
