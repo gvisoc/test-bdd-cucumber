@@ -13,7 +13,7 @@
     "start": "node index.js",
     "test": "cucumber-js",
     "coverage": "istanbul cover cucumber-js",
-    "coverall": "istanbul cover cucumber-js --report lcovonly && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage"
+    "coveralls": "istanbul cover cucumber-js --report lcovonly && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
