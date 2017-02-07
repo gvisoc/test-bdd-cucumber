@@ -1,12 +1,15 @@
 'use strict'
 function Account (initialBalance) {
+
   this.deposit = function (amount) {
     this.balance = this.balance + amount;
   };
+
   this.withdraw = function (amount) {
     if (this.balance >= amount)
       this.balance = this.balance - amount;
   }
+
   this._isNumeric = function (n) {
     return !isNaN (parseFloat (n)) && isFinite (n);
   };
