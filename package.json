@@ -7,12 +7,15 @@
     "babelify": "^7.3.0",
     "coveralls": "^2.11.16",
     "cucumber": "^2.0.0-rc.7",
+    "eslint": "^3.15.0",
     "istanbul": "^0.4.5"
   },
   "scripts": {
     "start": "node index.js",
     "test": "cucumber-js",
     "coverage": "istanbul cover cucumber-js",
+    "lint": "eslint entities/",
+    "lint-features": "eslint features/",
     "coveralls": "istanbul cover cucumber-js --report lcovonly && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage"
   },
   "repository": {
