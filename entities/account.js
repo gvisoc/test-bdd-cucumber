@@ -1,29 +1,29 @@
 'use strict'
-function Account (initialBalance) {
+function Account(initialBalance) {
 
-  this.deposit = function (amount) {
+  this.deposit = function(amount) {
     this.balance = this.balance + amount;
-  };
+  }
 
-  this.withdraw = function (amount) {
+  this.withdraw = function(amount) {
     if (this.balance >= amount)
       this.balance = this.balance - amount;
   }
 
-  this._isNumeric = function (n) {
-    return !isNaN (parseFloat (n)) && isFinite (n);
-  };
+  this.__isNumeric = function(number) {
+    return !isNaN(parseFloat(number)) && isFinite(number);
+  }
 
-  if (this._isNumeric (initialBalance)){
-      this.balance = parseFloat (initialBalance);
+  if (this.__isNumeric(initialBalance)) {
+      this.balance = parseFloat(initialBalance);
   }
   else {
     this.balance = 0.0;
   }
-};
+}
 
 module.exports = {
-  create: function (initialBalance) {
-    return new Account (initialBalance);
+  create: function(initialBalance) {
+    return new Account(initialBalance);
   }
-};
+}
