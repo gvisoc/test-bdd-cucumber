@@ -1,6 +1,6 @@
 {
   "name": "test-bdd-cucumber",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A test-run for CucumberJS and Istanbul",
   "main": "index.js",
   "devDependencies": {
@@ -21,6 +21,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/gvisoc/test-bdd-cucumber.git"
+  },
+  "bugs": {
+    "url" : "https://github.com/gvisoc/test-bdd-cucumber/issues"
   },
   "keywords": [
     "bdd",
