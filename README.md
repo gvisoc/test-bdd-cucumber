@@ -39,7 +39,7 @@ module.exports = {
 }
 ```
 
-I lazily and nastily borrowed `_isNumeric` [from this question on Stack Overflow](http://stackoverflow.com/questions/18082/validate-decimal-numbers-in-javascript-isnumeric) whose best answer is flagged as by community wiki and [CMS](http://stackoverflow.com/users/5445). Kudos to community wiki and CMS!
+I lazily and nastily borrowed `__isNumeric` [from this question on Stack Overflow](http://stackoverflow.com/questions/18082/validate-decimal-numbers-in-javascript-isnumeric) whose best answer is flagged as by community wiki and [CMS](http://stackoverflow.com/users/5445). Kudos to community wiki and CMS!
 
 ## How to use
 Clone the repository, and run the following:
