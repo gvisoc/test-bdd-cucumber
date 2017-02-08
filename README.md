@@ -9,34 +9,34 @@ The system under test (SUT from now on) is an account entity that does not suppo
 
 ```javascript
 'use strict'
-function Account (initialBalance) {
+function Account(initialBalance) {
 
-  this.deposit = function (amount) {
+  this.deposit = function(amount) {
     this.balance = this.balance + amount;
-  };
+  }
 
-  this.withdraw = function (amount) {
+  this.withdraw = function(amount) {
     if (this.balance >= amount)
       this.balance = this.balance - amount;
   }
 
-  this._isNumeric = function (n) {
-    return !isNaN (parseFloat (n)) && isFinite (n);
-  };
+  this.__isNumeric = function(number) {
+    return !isNaN(parseFloat(number)) && isFinite(number);
+  }
 
-  if (this._isNumeric (initialBalance)){
-      this.balance = parseFloat (initialBalance);
+  if (this.__isNumeric(initialBalance)) {
+      this.balance = parseFloat(initialBalance);
   }
   else {
     this.balance = 0.0;
   }
-};
+}
 
 module.exports = {
-  create: function (initialBalance) {
-    return new Account (initialBalance);
+  create: function(initialBalance) {
+    return new Account(initialBalance);
   }
-};
+}
 ```
 
 I lazily and nastily borrowed `_isNumeric` [from this question on Stack Overflow](http://stackoverflow.com/questions/18082/validate-decimal-numbers-in-javascript-isnumeric) whose best answer is flagged as by community wiki and [CMS](http://stackoverflow.com/users/5445). Kudos to community wiki and CMS!
