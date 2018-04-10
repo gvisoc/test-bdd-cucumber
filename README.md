@@ -55,4 +55,3 @@ Sending the reports to Coveralls is done through Travis CI currently (which runs
 ## Where to find the key points of this (shortcut for the impatient)
 Take a look at the CucumberJS `.feature` files in the directory `./features/` and how to convert them into actions in the `*.js` files inside `./features/step_definitions/` directory. The ones named `account_behavior.feature` and `account_behavior.steps.js` are specially interesting to see how powerful can be to specify the so called "**Scenario Outline**s".
 
-A blog post covering this in proper is available at my [Github blog](http://gvisoc.com/automated-testing/2017/02/11/bdd-test-run.html).
